@@ -1,6 +1,7 @@
 <?php
 
-$filename = $argv[1] ?? 'testinput.txt';
+$inputPath = str_replace('/aoc-solutions/', '/aoc-inputs/', getcwd()) . '/';
+$filename = $inputPath . ($argv[1] ?? 'testinput.txt');
 
 $input = file_get_contents($filename);
 
